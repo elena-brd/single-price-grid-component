@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --primary-cyan: hsl(179, 62%, 43%);
+    --primary-bright-yellow: hsl(71, 73%, 54%);
+    --neutral-light-gray: hsl(204, 43%, 93%);
+    --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background: var(--neutral-light-gray);
+    line-height: 1.4;
+}
+
+.container {
+    width: 650px;
+    height: 100vh;
+    margin: 120px auto;
+}
+
+#main-card .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Top card */
+#main-card .top-card {
+    background: #fff;
+    padding: 35px;
+}
+
+.top-card h2 {
+    color: var(--primary-cyan);
+}
+
+.title-top {
+    color: var(--primary-bright-yellow);
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.about-top {
+    font-size: 16px;
+    color: var(--neutral-grayish-blue);
+    line-height: 1.6;
+}
+
+/* Left card */
+#main-card .left-card {
+    background: var(--primary-cyan);
+    padding: 35px;
+}
+
+.left-card h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.left-card span {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.left-card p {
+    color: var(--neutral-light-gray);
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.about-left {
+    font-size: 15px !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: var(--primary-bright-yellow);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0px 2px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* Right card */
+#main-card .right-card {
+    color: #fff;
+    background: #54b9b8;
+    padding: 30px;
+}
+
+.right-card p {
+    font-size: 13px;
+    padding: 15px 0;
+    width: 60%;
+    color: var(--neutral-light-gray);
+}
+
+@media(max-width: 750px) {
+    .grid-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+}
